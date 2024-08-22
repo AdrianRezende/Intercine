@@ -1,10 +1,7 @@
-new Glider(document.querySelector('.glider'), {
-    slidesToShow: 1,
+import jQuery from "jquery"; window.$ = window.jQuery = jQuery;
 
-    draggable: true,
-    dots: '.dots',
-    arrows: {
-      prev: '.prev',
-      next: '.next'
-    }
-  });
+$.backstretch([
+    "images/outside.jpg"
+  , "images/garfield-interior.jpg"
+  , "images/cheers.jpg"
+], {duration: 3000, fade: 750});
